@@ -9,24 +9,19 @@ body{
     background-size: 800px;
     background-position: 90% -25%;
 }
-
 #cta{
     background-image: url('../img/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
 }
-
 @media(max-width:576px){
     body{
         background-position: 50px -50px;
         background-size: 500px;
     }
-
     #cta {
         background-image:url('../img/bg-simplify-section-mobile.svg');
-
     }
 }
-
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -34,7 +29,6 @@ body{
     transition: all 0.25s;
     position: relative;
 }
-
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
@@ -45,7 +39,7 @@ body{
     height: 2px;
     background: #000;
     transform: rotate(0);
-    transition: all 0.2s;
+    transition: all 0.5s;
 }
 
 .hamburger-middle{
@@ -62,7 +56,7 @@ body{
 }
 
 .open .hamburger-top{
-    transform: rotate(45deg) translate(6px) translate(6px);
+    transform: rotate(45deg) translateY(6px) translate(6px);
 
 }
 
@@ -71,5 +65,5 @@ body{
 }
 
 .open .hamburger-bottom{
-    transform: rotate(-45deg) translate(6px) translate(-6px);
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
